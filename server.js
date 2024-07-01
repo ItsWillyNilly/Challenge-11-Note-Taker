@@ -56,6 +56,7 @@ app.post('/api/notes', (req, res) => {
                 console.log(err);
             } else {
                 let savedNotes = JSON.parse(data);
+                console.log(savedNotes);
 
                 savedNotes.push(newNote);
 
@@ -76,6 +77,7 @@ app.post('/api/notes', (req, res) => {
 
 // delete a note
 app.delete('/api/notes/:id', (req, res) => {
+    // reads the database, parses the data, goes through the saved notes and finds the matching ID and removes it from the database
     fs.readFile('./Develop/db/db.json', 'utf8', (err, data) => {
         if (err) {
             console.log(err);
@@ -88,6 +90,8 @@ app.delete('/api/notes/:id', (req, res) => {
                     savedNotes.splice(i, 1);
                 }
             }
+
+            // stringifies the data dn updates the database.
             fs.writeFile('./Develop/db/db.json', JSON.stringify(savedNotes), (err) => {
                 if (err) {
                     console.log(err);
