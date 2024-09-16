@@ -30,11 +30,50 @@ WHEN I click on the "New Note" button in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column and the button disappearso.
 ```
 
-## Screenshot of the website
-Screenshot <img src="assets/images/Screenshot 2024-04-24 at 5.49.42 PM.png">
+## Technologies Used
+**Node.js**
+**fs**
+**uniqid**
+**Path**
+**Express.js**
+**Insomnia**
+
+## Installation Instructions
+**Clone the repository**
+```bash
+git clone git@github.com:ItsWillyNilly/Challenge-11-Note-Taker.git
+```
+
+**Navigate to the project directory**
+<br>EXAMPLE:
+```
+cd /Users/williamlee/bootcamp/challenge-11/Challenge-11-Note-Taker
+```
+**Install the Node package**
+```bash
+npm init -y
+```
+
+**Install dependencies**
+```bash
+npm i express
+```
+```bash
+npm i uniqid
+```
+
+**Run the program**
+```bash
+node server.js
+```
+
+## Program Demonstration
+<img src="Develop/assets/videos/Untitled Video September 15, 2024 7_12 PM.gif">
+Video Link:<br> https://drive.google.com/file/d/1JnQhpZ1lNftP0PQG82fg9cFrG0a55Qi1/view?usp=sharing
+
 
 ## Website Link
-https://itswillynilly.github.io/Challenge-03-Employee-Payroll-Tracker/
+https://challenge-11-note-taker-nq4y.onrender.com/notes
 
 ## GitHub Repo Link
-https://github.com/ItsWillyNilly/Challenge-04-Personal-Blog
+https://github.com/ItsWillyNilly/Challenge-11-Note-Taker
